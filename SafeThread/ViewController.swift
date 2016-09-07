@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var value:String = ""
+    var value: String = ""
     
     let myQueue: dispatch_queue_t = dispatch_queue_create("com.ivanzeng.safequeue", DISPATCH_QUEUE_CONCURRENT)
     

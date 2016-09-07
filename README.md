@@ -1,3 +1,13 @@
+### 多线程关键词
+
+共享资源 Sharing of Resources
+互斥锁 Mutex Lock 
+死锁 Dead Lock
+资源饥饿 Starvation （本文代码中的多读取单写入方式，解决这个问题）
+优先级反转 Priority Inversion
+
+[资料](https://objccn.io/issue-2-1/#priority_inversion)
+
 ### 多线程访问同一资源的安全问题
 
 解决方案很多，比如synchronization block、NSLock、OSSpinLock（[不安全了](http://blog.ibireme.com/2016/01/16/spinlock_is_unsafe_in_ios/)）等。资料上表示这两种方式效率都不是很高。拿同步块来说，比如一个类里有100个属性，每个都加了 `synchronized(self) `。好了，每一个属性的访问的时候，都要确保另外99个访问完毕才能执行。
