@@ -1,9 +1,13 @@
 ### 多线程关键词
 
 共享资源 Sharing of Resources
+
 互斥锁 Mutex Lock 
-死锁 Dead Lock
+
+死锁 Dead Lock （一句话，一直在等，却盼不到结束）
+
 资源饥饿 Starvation （本文代码中的多读取单写入方式，解决这个问题）
+
 优先级反转 Priority Inversion
 
 [资料](https://objccn.io/issue-2-1/#priority_inversion)
